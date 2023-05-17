@@ -46,7 +46,7 @@ jobs:
           context: containers/fluent-bit/.
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: d-kuro/moco/mysqld_exporter:${{ env.TAG }}
+          tags: ghcr.io/d-kuro/moco/mysqld_exporter:${{ env.TAG }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
@@ -56,6 +56,6 @@ jobs:
           context: containers/fluent-bit/.
           platforms: linux/amd64,linux/arm64
           push: false
-          tags: d-kuro/moco/mysqld_exporter:${{ env.TAG }}
+          tags: ghcr.io/d-kuro/moco/mysqld_exporter:${{ env.TAG }}
           cache-from: type=gha
           cache-to: type=gha,mode=max

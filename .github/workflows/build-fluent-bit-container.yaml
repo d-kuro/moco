@@ -51,7 +51,7 @@ jobs:
           context: containers/fluent-bit/.
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/cybozu-go/moco/fluent-bit:${{ env.TAG }}
+          tags: ghcr.io/d-kuro/moco/fluent-bit:${{ env.TAG }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
@@ -61,6 +61,6 @@ jobs:
           context: containers/fluent-bit/.
           platforms: linux/amd64,linux/arm64
           push: false
-          tags: ghcr.io/cybozu-go/moco/fluent-bit:${{ env.TAG }}
+          tags: ghcr.io/d-kuro/moco/fluent-bit:${{ env.TAG }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
