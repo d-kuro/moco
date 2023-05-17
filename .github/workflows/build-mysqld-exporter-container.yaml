@@ -4,12 +4,14 @@ on:
   pull_request:
     paths:
       - "containers/mysqld_exporter/**"
+      - ".github/workflows/build-mysqld-exporter-container.yaml"
       - '!**.md'
   push:
     branches:
       - 'main'
     paths:
       - "containers/mysqld_exporter/**"
+      - ".github/workflows/build-mysqld-exporter-container.yaml"
       - '!**.md'
 
 jobs:
